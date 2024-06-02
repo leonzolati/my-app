@@ -20,15 +20,15 @@ h1 {
 
     margin: 0;
 
-    @media (max-width: 800px) {
+    @media (width < 800px) {
         font-size: 64px;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
         font-size: 92px;
     }
 
-    @media (min-width: 1800px) {
+    @media (width >= 1800px) {
         font-size: 126px;
     }
 }
@@ -39,16 +39,16 @@ h2 {
 
     margin: 0;
 
-    @media (max-width: 800px) {
+    @media (width < 800px) {
         font-size: 24px;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
         font-size: 32px;
     }
 
-    @media (min-width: 1800px) {
-        font-size: 64px;
+    @media (width >= 1800px) {
+        font-size: 40px;
     }
 }
 
@@ -58,15 +58,15 @@ h3 {
 
     margin: 0;
 
-    @media (max-width: 800px) {
+    @media (width < 800px) {
         font-size: 16px;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
         font-size: 24px;
     }
 
-    @media (min-width: 1800px) {
+    @media (width >= 1800px) {
         font-size: 32px;
     }
 }
@@ -77,16 +77,16 @@ p {
 
     margin: 0;
 
-    @media (max-width: 800px) {
+    @media (width < 800px) {
         font-size: 12px;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
         font-size: 16px;
     }
 
-    @media (min-width: 1800px) {
-        font-size: 24px;
+    @media (width >= 1800px) {
+        font-size: 20px;
     }
 }
 
@@ -97,15 +97,15 @@ a {
 
     margin: 0;
 
-    @media (max-width: 800px) {
+    @media (width < 800px) {
         font-size: 12px;
     }
 
-    @media (min-width: 800px) {
+    @media (width >= 800px) {
         font-size: 16px;
     }
 
-    @media (min-width: 1800px) {
+    @media (width >= 1800px) {
         font-size: 24px;
     }
 }

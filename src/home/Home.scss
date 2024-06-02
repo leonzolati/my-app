@@ -22,16 +22,19 @@
   display: flex;
   gap: 32px;
 
-  @media (max-width: 800px) {
-    width: 80%
+  @media (width < 800px) {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
-  @media (min-width: 800px) {
-    width: max(800px, 60%)
+  @media (width >= 800px) {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
-  @media (min-width: 2000px) {
-    width: 50%
+  @media (width >= 1800px) {
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
 
@@ -49,15 +52,15 @@
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 800px) {
+  @media (width < 800px) {
     display: none;
   }
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     max-width: 300px;
   }
 
-  @media (min-width: 1800px) {
+  @media (width >= 1800px) {
     max-width: 400px;
   }
 }
@@ -65,11 +68,11 @@
 .Home #hero>img {
   mix-blend-mode: luminosity;
 
-  @media (min-width: 800px) {
+  @media (width < 1800px) {
     width: 600px;
   }
 
-  @media (min-width: 1800px) {
+  @media (width >= 1800px) {
     width: 800px;
   }
 }
