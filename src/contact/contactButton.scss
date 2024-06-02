@@ -1,0 +1,14 @@
+@import "../style.scss";
+
+.ContactButton {
+    color: $cream;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.ContactButton > img {
+    width: 92px;
+}
