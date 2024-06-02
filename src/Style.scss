@@ -4,3 +4,62 @@ $blue: #5E2BFF;
 $cream: #FFF7EB;
 $black: #3F3930;
 
+
+h1 {
+    font: $font;
+
+    font-weight: 800;
+    letter-spacing: -1%;
+    line-height: 90%;
+
+    margin: 0;
+
+    @media (max-width: 800px) {font-size: 64px;}
+    @media (min-width: 800px) {font-size: 92px;}
+    @media (min-width: 1800px) {font-size: 126px;}
+}   
+
+h2 {
+    font: $font;
+    font-weight: 800;
+
+    margin: 0;
+
+    @media (max-width: 800px) {font-size: 24px;}
+    @media (min-width: 800px) {font-size: 32px;}
+    @media (min-width: 1800px) {font-size: 64px;}
+}
+
+h3 {
+    font: $font;
+    font-weight: 400;
+
+    margin: 0;
+
+    @media (max-width: 800px) {font-size: 16px;}
+    @media (min-width: 800px) {font-size: 24px;}
+    @media (min-width: 1800px) {font-size: 32px;}
+}
+
+p {
+    font: $font;
+    font-weight: 400;
+
+    margin: 0;
+
+    @media (max-width: 800px) {font-size: 12px;}
+    @media (min-width: 800px) {font-size: 16px;}
+    @media (min-width: 1800px) {font-size: 24px;}
+}
+
+a {
+    font: $font;
+    font-weight: 800;
+    text-decoration: none;
+
+    margin: 0;
+
+    @media (max-width: 800px) {font-size: 12px;}
+    @media (min-width: 800px) {font-size: 16px;}
+    @media (min-width: 1800px) {font-size: 24px;}
+}
