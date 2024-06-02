@@ -1,0 +1,75 @@
+@import "../style.scss";
+
+.Home {
+  background-color: $blue;
+  color: $cream;
+
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: -99;
+}
+
+.Home #container {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 800px) {
+    width: 80%
+  }
+
+  @media (min-width: 800px) {
+    width: max(800px, 60%)
+  }
+
+  @media (min-width: 2000px) {
+    width: 50%
+  }
+}
+
+.Home #text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: center;
+  gap: 16px;
+
+}
+
+.Home #hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    max-width: 300px;
+  }
+
+  @media (min-width: 1800px) {
+    max-width: 400px;
+  }
+}
+
+.Home #hero>img {
+  mix-blend-mode: luminosity;
+
+  @media (min-width: 800px) {
+    width: 600px;
+  }
+
+  @media (min-width: 1800px) {
+    width: 800px;
+  }
+}
