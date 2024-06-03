@@ -1,6 +1,6 @@
 @import '../style.scss';
 
-.Contact{
+.Contact {
     background-color: $blue;
     color: $cream;
 
@@ -12,22 +12,34 @@
     gap: 64px;
 
     @media (width < 800px) {
+        padding-left: 5%;
+        padding-right: 5%;
+
+        gap: 32px;
+    }
+
+    @media (width >=800px) {
         padding-left: 10%;
         padding-right: 10%;
     }
 
-    @media (width >=800px) {
-        padding-left: 20%;
-        padding-right: 20%;
+    @media (width >=1200px) {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     @media (width >=1800px) {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 
 .Contact #buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 64px;
+
+    @media (width < 800px) {
+        gap: 32px;
+    }
 }

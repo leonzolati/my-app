@@ -9,6 +9,17 @@
     gap: 8px;
 }
 
-.ContactButton > img {
+
+a:focus, a:hover {
+    .ContactButton {
+        mix-blend-mode: lighten;
+    }
+}
+
+.ContactButton>img {
     width: 92px;
+
+    @media (width < 800px) {
+        width: 72px;
+    }
 }
