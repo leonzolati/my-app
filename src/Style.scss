@@ -36,11 +36,12 @@ h1 {
 h2 {
     font: $font;
     font-weight: 800;
+    line-height: 90%;
 
     margin: 0;
 
     @media (width < 800px) {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     @media (width >= 800px) {
@@ -54,7 +55,7 @@ h2 {
 
 h3 {
     font: $font;
-    font-weight: 400;
+    font-weight: 400;    
 
     margin: 0;
 

@@ -4,14 +4,17 @@
     background-color: $blue;
     color: $cream;
 
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 160px;
+    padding-bottom: 160px;
 
     display: flex;
     flex-direction: column;
     gap: 64px;
 
     @media (width < 800px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+
         padding-left: 5%;
         padding-right: 5%;
 
@@ -34,6 +37,12 @@
     }
 }
 
+.Contact > h1 {
+    @media (width < 800px) {
+        display: none;
+    }
+}
+
 .Contact #buttons {
     display: flex;
     flex-wrap: wrap;
@@ -41,5 +50,6 @@
 
     @media (width < 800px) {
         gap: 32px;
+        align-self: center;
     }
 }

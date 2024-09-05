@@ -1,25 +1,54 @@
 @import "../style.scss";
 
 .Experience {
-    display: flex;
-    gap: 16px 48px;
+	display: grid;
+
     padding: 32px 48px;
-    border-radius: 6px;
+    gap: 16px 48px;
 
-    box-shadow: 6px 6px 16px rgba($black, 0.25);
-    
-    @media (width < 800px) {
-        flex-direction: column;
-    }
+	grid-template-columns: 150px auto;
+	grid-template-areas:
+		"a b"
+		"a c";
+
+	@media (width < 800px) {
+        padding: 32px 32px;
+        gap: 16px 16px;
+
+		grid-template-columns: 64px auto;
+		grid-template-areas:
+			"a b"
+			"c c";
+	}
+
+
+	border-radius: 6px;
+	box-shadow: 6px 6px 16px rgba($black, 0.25);
 }
 
-.Experience>img{
-    max-width: 150px;
+.Experience #experienceImage > img {
+	max-width: 150px;
+
+	@media (width < 800px) {
+		max-width: 64px;
+	}
 }
 
-.Experience #text {
+.Experience #experienceImage {
+	grid-area: a;
+    display: flex;
+}
+
+.Experience #experienceTitle {
+	grid-area: b;
+
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    color: $black;
+    align-self: center;
+
+    gap: 4px;
+}
+
+.Experience #experienceDescription {
+	grid-area: c;
 }
